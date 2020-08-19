@@ -17,3 +17,5 @@ spec:
   valuesFrom:
   - externalSourceRef:
       url: https://raw.githubusercontent.com/dilerous/kubernetes_lab_gitops/master/keel/values.yaml
+  - externalSourceRef:
+      url: https://raw.githubusercontent.com/dilerous/kubernetes_lab_gitops/master/keel/ingress_route.yaml
