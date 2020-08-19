@@ -13,9 +13,9 @@ spec:
   chart:
     repository: https://charts.keel.sh/
     name: keel
-#    version: 0.9.3
+    version: 0.9.3
     service:
       type: ClusterIP
-#  valuesFrom:
-#  - externalSourceRef:
-#      url: https://raw.githubusercontent.com/dilerous/kubernetes_lab_gitops/master/keel/values.yaml
+  valuesFrom:
+  - externalSourceRef:
+      url: https://raw.githubusercontent.com/dilerous/kubernetes_lab_gitops/master/keel/values.yaml
