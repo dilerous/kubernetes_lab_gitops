@@ -8,8 +8,6 @@ metadata:
     fluxcd.io/automated: "true"
 spec:
   releaseName: keel
-  values:
-    file: values.yaml
   chart:
     git: https://github.com/keel-hq/keel/tree/master/chart/keel
     ref: master
