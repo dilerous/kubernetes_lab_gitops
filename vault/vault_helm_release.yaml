@@ -2,12 +2,12 @@
 apiVersion: helm.fluxcd.io/v1
 kind: HelmRelease
 metadata:
-  name: testvault
+  name: vault
   namespace: vault
   annotations:
     fluxcd.io/automated: "false"
 spec:
-  releaseName: testvault
+  releaseName: vault
   chart:
     git: https://github.com/hashicorp/vault-helm/
     ref: master

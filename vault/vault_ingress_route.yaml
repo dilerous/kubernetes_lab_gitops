@@ -1,12 +1,12 @@
 apiVersion: traefik.containo.us/v1alpha1
 kind: IngressRoute
 metadata:
-  name: testvault
+  name: vault
 spec:
   entryPoints:
     - web
   routes:
-    - match: Host(`testvault.10.237.198.16.xip.io`)
+    - match: Host(`vault.10.237.198.16.xip.io`)
       kind: Rule
       services:
         - name: vault
