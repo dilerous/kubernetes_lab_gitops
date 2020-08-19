@@ -5,7 +5,7 @@ metadata:
   name: keel
   namespace: keel
   annotations:
-    fluxcd.io/automated: "false"
+    fluxcd.io/automated: "true"
 spec:
   releaseName: keel
   values:
