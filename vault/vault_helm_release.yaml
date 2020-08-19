@@ -16,10 +16,6 @@ spec:
     server:
       dataStorage:
         enabled: true
-      extraVolumes:
-        - type: secret
-          name: kms-vault
-          path: /vault/userconfig
       annotations:
         backup.velero.io/backup-volumes: data
       standalone:
