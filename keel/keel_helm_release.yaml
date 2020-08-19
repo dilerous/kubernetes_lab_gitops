@@ -11,6 +11,7 @@ spec:
   chart:
     git: https://github.com/keel-hq/keel/tree/master/chart/keel
     ref: master
+    path: ./
     service:
       type: ClusterIP
   valuesFrom:
