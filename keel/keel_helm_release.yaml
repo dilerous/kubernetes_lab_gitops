@@ -11,7 +11,7 @@ spec:
   values:
     file: values.yaml
   chart:
-    repository: https://charts.keel.sh
+    repository: https://charts.keel.sh/
     name: keel
 #    version: 0.9.3
     service:
