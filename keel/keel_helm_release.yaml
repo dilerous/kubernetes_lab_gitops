@@ -9,9 +9,9 @@ metadata:
 spec:
   releaseName: keel
   chart:
-    repository: https://hub.helm.sh/charts
-    name: keel/keel
-    version: 0.16.1
+    repository: https://charts.keel.sh
+    name: keel
+    version: 0.9.3
   values:
     persistence:
       enabled: false
