@@ -1,0 +1,22 @@
+helmProvider:
+  enabled: true
+  version: "v3"
+basicauth:
+  enabled: true
+  user: "leighton"
+  password: "kate"
+service:
+  enabled: true
+  type: ClusterIP
+  externalPort: 9300
+keel:
+  # keel policy (all/major/minor/patch/force)
+  policy: patch
+  # trigger type, defaults to events such as pubsub, webhooks
+  trigger: poll
+  # polling schedule
+  pollSchedule: "@every 3m"
+  # images to track and update
+  images:
+    - repository: "keelhq/keel"
+      tag: "latest"

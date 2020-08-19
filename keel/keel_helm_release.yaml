@@ -1,0 +1,29 @@
+---
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: keel
+  namespace: keel
+  annotations:
+    fluxcd.io/automated: "false"
+    fluxcd.io/tag.chart-image: glob:0.9.*
+spec:
+  releaseName: keel
+  chart:
+    repository: https://hub.helm.sh/charts
+    name: keel
+    version: 0.9.3
+  values:
+    persistence:
+      enabled: false
+    resources:
+      requests:
+        memory: 32Mi
+        cpu: 10m
+    service:
+      type: ClusterIP
+  valuesFrom:
+  - externalSourceRef:
+      url: https://raw.githubusercontent.com/dilerous/kubernetes_lab_gitops/master/keel/values.yaml
+  - externalSourceRef:
+      url: https://raw.githubusercontent.com/dilerous/kubernetes_lab_gitops/master/keel/ingress_route.yaml

@@ -1,0 +1,14 @@
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: keel
+spec:
+  entryPoints:
+    - web
+  routes:
+    - match: Host(`keel.10.237.198.16.xip.io`)
+      kind: Rule
+      services:
+        - name: keel
+          port: 9300
+
