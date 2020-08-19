@@ -98,8 +98,8 @@ basicauth:
 # Keel service
 # Enable to receive webhooks from Docker registries
 service:
-  enabled: false
-  type: LoadBalancer
+  enabled: true
+  type: clusterIP
   externalPort: 9300
   clusterIP: ""
 
