@@ -10,7 +10,7 @@ spec:
   releaseName: keel
   chart:
     repository: https://charts.keel.sh
-    name: keel
+    name: keel/keel
     version: 0.9.3
   values:
     persistence:
