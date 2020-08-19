@@ -11,9 +11,8 @@ spec:
   values:
     file: values.yaml
   chart:
-    repository: https://charts.keel.sh/
-    name: keel
-    version: 0.9.3
+    git: https://github.com/keel-hq/keel/tree/master/chart/keel
+    ref: master
     service:
       type: ClusterIP
   valuesFrom:
