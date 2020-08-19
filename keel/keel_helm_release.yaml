@@ -22,8 +22,8 @@ spec:
         cpu: 10m
     service:
       type: ClusterIP
-  valuesFrom:
-  - externalSourceRef:
-      url: https://raw.githubusercontent.com/dilerous/kubernetes_lab_gitops/master/keel/values.yaml
-  - externalSourceRef:
-      url: https://raw.githubusercontent.com/dilerous/kubernetes_lab_gitops/master/keel/ingress_route.yaml
+#  valuesFrom:
+#  - externalSourceRef:
+#      url: https://raw.githubusercontent.com/dilerous/kubernetes_lab_gitops/master/keel/values.yaml
+#  - externalSourceRef:
+#      url: https://raw.githubusercontent.com/dilerous/kubernetes_lab_gitops/master/keel/ingress_route.yaml
