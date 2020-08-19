@@ -6,13 +6,12 @@ metadata:
   namespace: keel
   annotations:
     fluxcd.io/automated: "false"
-    fluxcd.io/tag.chart-image: glob:0.9.*
 spec:
   releaseName: keel
   chart:
     repository: https://hub.helm.sh/charts
-    name: keel
-    version: 0.9.3
+    name: keel/keel
+    version: 0.16.1
   values:
     persistence:
       enabled: false
