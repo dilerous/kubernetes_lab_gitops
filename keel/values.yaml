@@ -92,8 +92,8 @@ mail:
 # Basic auth on approvals
 basicauth:
   enabled: false
-  user: ""
-  password: ""
+  user: "leighton"
+  password: "kate"
 
 # Keel service
 # Enable to receive webhooks from Docker registries
