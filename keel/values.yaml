@@ -99,7 +99,7 @@ basicauth:
 # Enable to receive webhooks from Docker registries
 service:
   enabled: true
-  type: clusterIP
+  type: ClusterIP
   externalPort: 9300
   clusterIP: ""
 
