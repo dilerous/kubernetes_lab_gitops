@@ -9,9 +9,9 @@ metadata:
 spec:
   releaseName: keel
   chart:
-    git: https://github.com/keel-hq/keel/tree/master/chart/
+    git: https://github.com/keel-hq/keel
     ref: master
-    path: ./keel
+    path: chart/keel
     service:
       type: ClusterIP
   valuesFrom:
