@@ -91,7 +91,7 @@ mail:
 
 # Basic auth on approvals
 basicauth:
-  enabled: false
+  enabled: true
   user: "leighton"
   password: "kate"
 
