@@ -15,7 +15,7 @@ spec:
     path: .
   values:
     imageTag: 6.4.1
-    image: concourse/concourse:6.4.1
+    image: concourse/concourse
     imagePullPolicy: IfNotPresent
     concourse:
       web:
