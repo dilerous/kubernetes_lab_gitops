@@ -1,9 +1,0 @@
-imageTag: "6.4.1"
-concourse:
-  web:
-    vault:
-      enabled: true
-      url: http://vault:8200
-      namespace: kube-system
-      pathPrefix: /concourse
-
