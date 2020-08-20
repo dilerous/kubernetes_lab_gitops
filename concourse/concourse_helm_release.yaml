@@ -1,0 +1,24 @@
+---
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: concourse
+  namespace: concourse
+  annotations:
+    fluxcd.io/automated: "false"
+spec:
+  releaseName: vault
+  chart:
+    git: https://github.com/concourse/concourse-chart.git
+    ref: master
+    path: .
+  values:
+    imageTag: "6.4.1"
+    concourse:
+      web:
+        vault:
+          enabled: true
+          url: http://vault:8200
+          namespace: kube-system
+          pathPrefix: /concourse
+
