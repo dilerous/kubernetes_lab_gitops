@@ -35,7 +35,6 @@ spec:
             }
             storage "raft" {
               path = "/vault/data"
-              node_id = "raft_node_1"
             }
     ui:
       enabled: true
