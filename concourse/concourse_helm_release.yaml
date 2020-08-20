@@ -7,7 +7,7 @@ metadata:
   annotations:
     fluxcd.io/automated: "false"
 spec:
-  releaseName: vault
+  releaseName: concourse
   chart:
     git: https://github.com/concourse/concourse-chart.git
     ref: master
