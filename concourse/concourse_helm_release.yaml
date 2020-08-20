@@ -14,9 +14,6 @@ spec:
     ref: master
     path: .
   values:
-    imageTag: 6.4.1
-    image: concourse/concourse
-    imagePullPolicy: IfNotPresent
     concourse:
       web:
         externalUrl: "http://concourse.10.237.198.16.xip.io"
