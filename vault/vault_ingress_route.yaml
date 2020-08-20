@@ -11,5 +11,5 @@ spec:
       services:
         - name: vault
           port: 8200
-          namespace: vault
+          namespace: kube-system
 

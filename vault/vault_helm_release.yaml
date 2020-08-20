@@ -3,7 +3,7 @@ apiVersion: helm.fluxcd.io/v1
 kind: HelmRelease
 metadata:
   name: vault
-  namespace: vault
+  namespace: kube-system
   annotations:
     fluxcd.io/automated: "false"
 spec:
