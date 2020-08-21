@@ -10,9 +10,9 @@ metadata:
 spec:
   releaseName: prometheus-operator
   chart:
-    git: https://charts.bitnami.com/bitnami
+    git: https://raw.githubusercontent.com/helm/charts/master/stable/prometheus-operator/Chart.yaml
     ref: master
-    path: bitnami/prometheus-operator
+    path: .
 #  values:
 #  valueFileSecrets:
 #  - name: "vaultauthparam"
