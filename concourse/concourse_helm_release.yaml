@@ -21,7 +21,7 @@ spec:
           enabled: false
         vault:
           enabled: true
-          url: "http://vault:8200"
+          url: "http://vault.kube-system.svc.cluster.local:8200"
           authBackend: "approle"
   valueFileSecrets:
   - name: "vaultauthparam"
