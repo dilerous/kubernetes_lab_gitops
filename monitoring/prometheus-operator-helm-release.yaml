@@ -1,0 +1,19 @@
+---
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: prometheus-operator
+  namespace: monitoring
+  annotations:
+    fluxcd.io/automated: "true"
+#    filter.fluxcd.io/chart-image: semver:~6.4
+spec:
+  releaseName: prometheus-operator
+  chart:
+    git: https://kubernetes-charts.storage.googleapis.com/
+    ref: master
+    path: stable/prometheus-operator
+#  values:
+#  valueFileSecrets:
+#  - name: "vaultauthparam"
+
