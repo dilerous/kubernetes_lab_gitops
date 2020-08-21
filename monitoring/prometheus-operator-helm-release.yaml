@@ -10,9 +10,9 @@ metadata:
 spec:
   releaseName: prometheus-operator
   chart:
-    git: https://kubernetes-charts.storage.googleapis.com/
+    git: https://charts.bitnami.com/bitnami
     ref: master
-    path: stable/prometheus-operator
+    path: bitnami/prometheus-operator
 #  values:
 #  valueFileSecrets:
 #  - name: "vaultauthparam"
