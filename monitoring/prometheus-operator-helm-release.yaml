@@ -10,9 +10,12 @@ metadata:
 spec:
   releaseName: prometheus-operator
   chart:
-    git: https://github.com/helm/charts
-    ref: master
-    path: stable/prometheus-operator
+    repository: https://kubernetes-charts.storage.googleapis.com/
+    name: prometheus-operator
+    version: 9.3.1
+#    git: https://github.com/helm/charts
+#    ref: master
+#    path: stable/prometheus-operator
 #  values:
 #  valueFileSecrets:
 #  - name: "vaultauthparam"
