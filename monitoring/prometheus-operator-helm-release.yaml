@@ -10,9 +10,9 @@ metadata:
 spec:
   releaseName: prometheus-operator
   chart:
-    git: https://github.com/dilerous/kubernetes_lab_gitops
+    git: https://github.com/helm/charts
     ref: master
-    path: monitoring
+    path: stable/prometheus-operator
 #  values:
 #  valueFileSecrets:
 #  - name: "vaultauthparam"
