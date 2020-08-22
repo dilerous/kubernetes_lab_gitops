@@ -6,17 +6,11 @@ metadata:
   namespace: monitoring
   annotations:
     fluxcd.io/automated: "true"
-#    filter.fluxcd.io/chart-image: semver:~6.4
+    filter.fluxcd.io/chart-image: semver:~9.3
 spec:
   releaseName: prometheus-operator
   chart:
     repository: https://kubernetes-charts.storage.googleapis.com/
     name: prometheus-operator
     version: 9.3.1
-#    git: https://github.com/helm/charts
-#    ref: master
-#    path: stable/prometheus-operator
-#  values:
-#  valueFileSecrets:
-#  - name: "vaultauthparam"
 
