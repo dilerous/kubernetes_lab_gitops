@@ -1,0 +1,17 @@
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: prometheus-operator-grafana
+  namespace: monitoring
+spec:
+  entryPoints:
+    - web
+  routes:
+    - match: Host(`grafana.10.237.198.16.xip.io`)
+      kind: Rule
+      services:
+        - name: prometheus-operator-grafana
+          port: 80
+          namespace: monitoring
+
+
