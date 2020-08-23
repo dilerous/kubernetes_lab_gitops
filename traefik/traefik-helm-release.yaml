@@ -3,7 +3,7 @@ apiVersion: helm.fluxcd.io/v1
 kind: HelmRelease
 metadata:
   name: traefik
-  namespace: default
+  namespace: traefik
   annotations:
     fluxcd.io/automated: "true"
     filter.fluxcd.io/chart-image: semver:~2.2
