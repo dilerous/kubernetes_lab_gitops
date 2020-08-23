@@ -18,9 +18,7 @@ spec:
       name: traefik
       tag: 2.2.8
       pullPolicy: IfNotPresent
-    service:
+    ingressRoute:
+      dashboard:
       enabled: true
-      type: LoadBalancer
-#      externalIPs:
-#        - 10.237.198.15
 
