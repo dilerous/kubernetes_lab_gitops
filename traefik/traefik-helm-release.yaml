@@ -20,5 +20,7 @@ spec:
       pullPolicy: IfNotPresent
     ports:
       service:
+        enabled: true
+        type: LoadBalancer
         externalIPs: 10.237.198.16
 
