@@ -22,5 +22,5 @@ spec:
       enabled: true
       type: LoadBalancer
       externalIPs:
-        - 10.237.198.16
+        - 10.237.198.15
 
