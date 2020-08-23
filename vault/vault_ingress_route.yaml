@@ -6,7 +6,7 @@ spec:
   entryPoints:
     - web
   routes:
-    - match: Host(`vault.10.237.198.16.xip.io`)
+    - match: Host(`vault.10.237.198.15.xip.io`)
       kind: Rule
       services:
         - name: vault
