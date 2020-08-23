@@ -6,7 +6,7 @@ spec:
   entryPoints:
     - web
   routes:
-    - match: Host(`traefik.10.237.198.16`)
+    - match: Host(`traefik.10.237.198.16.xip.io`)
       kind: Rule
       services:
         - name: api@internal
