@@ -6,7 +6,7 @@ spec:
   entryPoints:
     - web
   routes:
-    - match: Host(`traefik.10.237.198.16`) && (PathPrefix(`/dashboard`) || PathPrefix(`/api`))
+    - match: Host(`traefik.10.237.198.16`)
       kind: Rule
       services:
         - name: api@internal
