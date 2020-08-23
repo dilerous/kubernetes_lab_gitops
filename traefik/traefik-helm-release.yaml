@@ -20,5 +20,5 @@ spec:
       pullPolicy: IfNotPresent
     ingressRoute:
       dashboard:
-      enabled: true
+      enabled: false
 
