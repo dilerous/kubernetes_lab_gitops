@@ -21,6 +21,6 @@ spec:
     service:
       enabled: true
       type: LoadBalancer
-      externalIPs:
-        - 10.237.198.15
+#      externalIPs:
+#        - 10.237.198.15
 
