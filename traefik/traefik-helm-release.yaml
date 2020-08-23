@@ -18,9 +18,8 @@ spec:
       name: traefik
       tag: 2.2.8
       pullPolicy: IfNotPresent
-    ports:
-      service:
-        enabled: true
-        type: LoadBalancer
-        externalIPs: 10.237.198.16
+    service:
+      enabled: true
+      type: LoadBalancer
+      externalIPs: 10.237.198.16
 
