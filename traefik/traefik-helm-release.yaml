@@ -21,4 +21,8 @@ spec:
     ingressRoute:
       dashboard:
         enabled: false
+    metrics:
+      prometheus:
+        addEntryPointsLabels: true
+        addServicesLabels: true
 
