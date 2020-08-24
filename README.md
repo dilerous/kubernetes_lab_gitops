@@ -27,4 +27,5 @@ helm upgrade -i helm-operator fluxcd/helm-operator --wait \
 --namespace flux \
 --set helm.versions=v3
 ```
-
+Temporary: How to install metallb
+https://davidstamen.com/deploying-tkg-on-vsphere/
