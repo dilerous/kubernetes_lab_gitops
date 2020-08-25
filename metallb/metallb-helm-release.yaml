@@ -11,7 +11,7 @@ spec:
   releaseName: metallb
   chart:
     repository: https://charts.bitnami.com/bitnami
-    name: bitnami/metallb
+    name: metallb
   values:
     prometheus:
       serviceMonitor:
