@@ -1,0 +1,33 @@
+---
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: metallb
+  namespace: metallb-system
+  annotations:
+    fluxcd.io/automated: "true"
+    filter.fluxcd.io/chart-image: semver:~0.9
+spec:
+  releaseName: metallb
+  chart:
+    repository: https://charts.bitnami.com/bitnami
+    name: bitnami/metallb
+  values:
+    prometheus:
+      serviceMonitor:
+        enabled: true
+        jobLabel: "app.kubernetes.io/name"
+    controller:
+      image:
+        registry: docker.io
+        repository: bitnami/metallb-controller
+        tag: 0.9.3-debian-10-r123
+        pullPolicy: IfNotPresent
+    speaker:
+      image:
+        registry: docker.io
+        repository: bitnami/metallb-speaker
+        tag: 0.9.3-debian-10-r128
+        pullPolicy: IfNotPresent
+
+
