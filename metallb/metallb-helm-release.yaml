@@ -27,7 +27,7 @@ spec:
       image:
         registry: docker.io
         repository: bitnami/metallb-speaker
-        tag: 0.9.3-debian-10-r128
+        tag: '0'
         pullPolicy: IfNotPresent
 
 
