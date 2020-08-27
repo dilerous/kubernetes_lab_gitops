@@ -20,7 +20,7 @@ spec:
       pullPolicy: IfNotPresent
     ingressRoute:
       dashboard:
-        enabled: false
+        enabled: true
     metrics:
       prometheus:
         addEntryPointsLabels: true
