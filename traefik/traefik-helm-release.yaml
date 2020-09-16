@@ -1,0 +1,28 @@
+---
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: traefik
+  namespace: traefik
+  annotations:
+    fluxcd.io/automated: "true"
+    filter.fluxcd.io/chart-image: semver:~2.2
+spec:
+  releaseName: traefik
+  chart:
+    git: https://github.com/containous/traefik-helm-chart
+    ref: master
+    path: ./traefik
+  values:
+    image:
+      name: traefik
+      tag: 2.2.8
+      pullPolicy: IfNotPresent
+    ingressRoute:
+      dashboard:
+        enabled: false
+    metrics:
+      prometheus:
+        addEntryPointsLabels: true
+        addServicesLabels: true
+
