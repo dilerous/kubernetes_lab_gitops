@@ -6,7 +6,7 @@ spec:
   entryPoints:
     - web
   routes:
-    - match: Host(`keel.10.237.198.15.xip.io`)
+    - match: Host(`keel.10.0.0.25.xip.io`)
       kind: Rule
       services:
         - name: keel
